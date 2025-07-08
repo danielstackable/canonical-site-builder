@@ -1,0 +1,9 @@
+[build]
+  command = "pnpm --filter study-in--london... run build:sync && pnpm --filter study-in--london... run sync && pnpm --filter study-in--london... run build"
+  publish = "projects/study-in--london/dist"
+
+[functions]
+  directory = "netlify/functions"
+
+[functions."bubbleSync"]
+  schedule = "*/15 * * * *"

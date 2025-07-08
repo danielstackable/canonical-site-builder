@@ -1,0 +1,18 @@
+{
+  "devDependencies": {
+    "@netlify/functions": "^4.1.10",
+    "@types/node": "^24.0.10",
+    "@types/node-fetch": "^2.6.12",
+    "dotenv": "^17.0.1",
+    "node-fetch": "^3.3.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "node-cron": "^4.2.0"
+  },
+  "scripts": {
+	"build:sync": "tsc --project tsconfig.json --outDir dist-scripts",
+    "sync": "node dist-scripts/bubble-to-astro-sync.js"
+  }
+}
