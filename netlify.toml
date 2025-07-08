@@ -7,3 +7,8 @@
 
 [functions."bubbleSync"]
   schedule = "*/15 * * * *"
+
+# For Japan context
+[context."japan"]
+  publish = "projects/study-in--japan/dist"
+  command = "pnpm install --no-frozen-lockfile && pnpm build"
