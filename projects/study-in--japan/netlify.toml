@@ -1,0 +1,9 @@
+[build]
+  command = "pnpm install --no-frozen-lockfile && pnpm build"
+  publish = "dist"
+
+[functions]
+  directory = "netlify/functions"
+
+[functions."bubbleSync"]
+  schedule = "*/15 * * * *"
