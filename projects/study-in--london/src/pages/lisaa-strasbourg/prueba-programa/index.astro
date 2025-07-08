@@ -1,0 +1,45 @@
+---
+/* ⚠️ AUTO‑GENERATED — DO NOT EDIT BY HAND. */
+const program = {
+  "Program_provider": "1751648724082x825063830839701400",
+  "Program_slug": "prueba-programa",
+  "Canonical_domain": "www.study-in--japan.com",
+  "Created Date": "2025-07-08T04:28:44.083Z",
+  "_id": "1751948924083x709077464762002400",
+  "Created By": "admin_user_stackableeducation_test",
+  "Program_name": "Prueba de Programa",
+  "Modified Date": "2025-07-08T04:34:58.446Z",
+  "providerName": "LISAA Strasbourg - School of Art & Design",
+  "Provider_slug": "lisaa-strasbourg",
+  "Provider_canonicalDomainEN": [
+    "study-in--london.com",
+    "study-in--japan.com"
+  ],
+  "langNames": [],
+  "occNames": []
+};
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>{program.Program_name}</title>
+    <script type="application/ld+json">{JSON.stringify(program.json_ld)}</script>
+  </head>
+  <body>
+    <h1>{program.Program_name}</h1>
+    <p>{program.Program_description}</p>
+
+    {program.providerName && <p><strong>Provider:</strong> {program.providerName}</p>}
+    {program.Provider_canonicalDomainEN?.length && <p><strong>Canonical Domains:</strong> {program.Provider_canonicalDomainEN.join(", ")}</p>}
+    {program.langNames.length && <p><strong>Language(s):</strong> {program.langNames.join(", ")}</p>}
+    {program.occNames.length && <p><strong>Occupation(s):</strong> {program.occNames.join(", ")}</p>}
+
+    {program.Program_educationalCredentialAwarded && <p><strong>Credential:</strong> {program.Program_educationalCredentialAwarded}</p>}
+    {program.Program_educationalLevel && <p><strong>Level:</strong> {program.Program_educationalLevel}</p>}
+    {program.Program_educationalProgramMode && <p><strong>Mode:</strong> {program.Program_educationalProgramMode}</p>}
+    {program.Program_programType && <p><strong>Type:</strong> {program.Program_programType}</p>}
+
+    <p><a href="/">← Back to all programs</a></p>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+---
+/* ⚠️ AUTO‑GENERATED — DO NOT EDIT BY HAND. */
+const program = {
+  "Modified Date": "2025-07-08T04:54:22.089Z",
+  "Created By": "admin_user_stackableeducation_test",
+  "Created Date": "2025-07-08T04:54:22.088Z",
+  "Program_name": "Prueba de Programa 2",
+  "Canonical_domain": "www.study-in--japan.com",
+  "_id": "1751950462088x582470525673787000",
+  "Program_provider": "1751648851725x449966156979492350",
+  "Program_slug": "prueba-programa-2",
+  "providerName": "LISAA Toulouse - School of Art & Design",
+  "Provider_slug": "lisaa-paris",
+  "langNames": [],
+  "occNames": []
+};
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>{program.Program_name}</title>
+    <script type="application/ld+json">{JSON.stringify(program.json_ld)}</script>
+  </head>
+  <body>
+    <h1>{program.Program_name}</h1>
+    <p>{program.Program_description}</p>
+
+    {program.providerName && <p><strong>Provider:</strong> {program.providerName}</p>}
+    {program.langNames.length && <p><strong>Language(s):</strong> {program.langNames.join(", ")}</p>}
+    {program.occNames.length && <p><strong>Occupation(s):</strong> {program.occNames.join(", ")}</p>}
+
+    {program.Program_educationalCredentialAwarded && <p><strong>Credential:</strong> {program.Program_educationalCredentialAwarded}</p>}
+    {program.Program_educationalLevel && <p><strong>Level:</strong> {program.Program_educationalLevel}</p>}
+    {program.Program_educationalProgramMode && <p><strong>Mode:</strong> {program.Program_educationalProgramMode}</p>}
+    {program.Program_programType && <p><strong>Type:</strong> {program.Program_programType}</p>}
+
+    <p><a href="/">← Back to all programs</a></p>
+  </body>
+</html>
